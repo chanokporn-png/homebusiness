@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',       // ทำ static export
   experimental: {
-    appDir: true           // ถ้าใช้ app/ directory
-  }
+    appDir: true
+  },
+  output: undefined // ลบหรืออย่าใช้ 'export'
 }
 
-export default nextConfig
+export default nextConfig;
