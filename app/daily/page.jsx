@@ -114,6 +114,9 @@ export default function Daily() {
       <button className={styles["back-button"]} onClick={() => router.push("/")}>
         กลับหน้าหลัก
       </button>
+      <button className={styles["back-button"]} onClick={() => router.push("/history")}>
+      ประวัติซ่อมรถ
+      </button>
     </div>
   );
 }
