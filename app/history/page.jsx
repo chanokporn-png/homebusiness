@@ -56,11 +56,11 @@ export default function History() {
         {cars.map((car) => (
           <div key={car._id} className={styles.card}>
             <h2 className="font-bold text-lg"> {car.ทะเบียนรถ  || "ไม่มีข้อมูล"}</h2> 
-            <p>{car.รุ่นรถ || ""}</p>
-            <p>{car.รายการ || ""}</p>
-            <p>{car.ราคา || ""}</p>
-            <p>{car.วันที่ || ""}</p>
-            <p>
+            <p>รุ่นรถ: {car.รุ่นรถ || ""}</p>
+            <p>รายการ: {car.รายการ || ""}</p>
+            <p>ราคา: {car.ราคา || ""}</p>
+            <p>วันที่: {car.วันที่ || ""}</p>
+            <p>วันที่แก้ไข: 
             {car.createdAt 
               ? new Date(car.createdAt).toLocaleDateString("th-TH") 
               : ""}
