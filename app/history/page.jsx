@@ -55,7 +55,7 @@ export default function History() {
       <div className={styles.grid}>
         {cars.map((car) => (
           <div key={car._id} className={styles.card}>
-            <h2 className="font-bold text-lg"> {car.ทะเบียนรถ  || "ไม่มีข้อมูล"}</h2> 
+            <h2 className="font-bold text-lg"> ทะเบียนรถ: {car.ทะเบียนรถ  || "ไม่มีข้อมูล"}</h2> 
             <p>รุ่นรถ: {car.รุ่นรถ || ""}</p>
             <p>รายการ: {car.รายการ || ""}</p>
             <p>ราคา: {car.ราคา || ""}</p>
