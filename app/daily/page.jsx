@@ -52,15 +52,6 @@ export default function Daily() {
         <form onSubmit={handleSubmit} className={styles.form}>
           <input
             type="text"
-            name="ชื่อรถ"
-            placeholder="ชื่อรถ"
-            className={styles.input}
-            value={form.ชื่อรถ}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
             name="ทะเบียนรถ"
             placeholder="ทะเบียนรถ"
             className={styles.input}
