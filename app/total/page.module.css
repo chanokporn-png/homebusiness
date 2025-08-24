@@ -1,0 +1,93 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  background-color: #f3f4f6; /* light gray */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Heading */
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937; /* dark gray */
+  text-align: center;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 64rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Card Text */
+.date {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2563eb; /* blue */
+}
+
+.carCount {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151; /* gray-700 */
+}
+
+.revenue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #16a34a; /* green */
+}
+
+/* No data */
+.noData {
+  font-size: 1rem;
+  color: #6b7280; /* gray-500 */
+  text-align: center;
+  grid-column: 1 / -1; /* span all columns */
+}
+
+/* Buttons */
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.backButton {
+  background-color: #6b7280; /* gray-500 */
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.backButton:hover {
+  background-color: #4b5563; /* darker gray */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
