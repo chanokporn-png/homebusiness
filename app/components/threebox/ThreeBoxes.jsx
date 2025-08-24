@@ -14,8 +14,11 @@ export default function ThreeBoxes() {
       <Link href="/item" className={`${styles.box} ${styles.blue}`}>
         อะไหล่
       </Link>
-      <Link href="/additem" className={`${styles.box} ${styles.purple}`}>
+      <Link href="/additem" className={`${styles.box} ${styles.pink}`}>
         เพิ่มอะไหล่
+      </Link>
+      <Link href="/total" className={`${styles.box} ${styles.orenge}`}>
+      รายรับวันนี้
       </Link>
     </div>
   );
